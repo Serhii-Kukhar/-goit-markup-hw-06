@@ -465,7 +465,7 @@ img {
 @media screen and (min-width: 768px) {
 
     .features-list {
-        gap: 24px;
+        gap: 72px 24px;
 
     }
 
@@ -488,12 +488,13 @@ img {
 
     .features-list {
         display: flex;
+        gap:24px;
 
         flex-wrap: nowrap;
     }
 
     .features-item {
-        width: calc((100% - 72px) / 4);
+        width: calc((100% - 24px) / 4);
     }
 
     .features-icon-list {
@@ -551,7 +552,6 @@ img {
 
 .team-item {
     background-color: #FFFFFF; 
-    width: 100%;
     border-radius: 0 0 4px 4px;
     justify-content: center;
     align-items: center;
@@ -562,7 +562,7 @@ img {
 
 .team-under-img{
     padding: 32px 0;
-    
+
 }
 
 .team-name {
@@ -676,22 +676,16 @@ img {
     background: #fff;
     position: relative;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
-.portfolio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .portfolio-item:hover .taste-cover-text {
     transform: translateY(0);
 }
-.portfolio-item:hover .taste-cover-text {
-    transform: translateY(0);
 
-
-
-}
 
 .taste-cover-wrapper {
     position: relative;
@@ -720,7 +714,7 @@ img {
 }
 .portfolio-under-img {
     padding-top: 32px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     padding-left: 16px;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -751,7 +745,11 @@ img {
         padding-bottom: 96px;
 }
     .portfolio-list {
+
         gap: 72px 24px;
+    }
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
     }
 
 }
@@ -763,7 +761,211 @@ img {
         padding-bottom: 120px;
 }
     .portfolio-list {
+        
         gap: 48px 24px;
+        
         }
+        
+        .portfolio-item {
+            box-shadow: none;
+            width:calc((100% - 48px) / 3);
+        }
+    .portfolio-item:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                        0px 1px 1px rgba(46, 47, 66, 0.16),
+                        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 }
     
+
+/* ----------------footer------------------ */
+.container-footer {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
+    
+}
+.footer {
+    background: #2e2f42;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.footer-logo-container {
+
+}
+.footer-logo-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+
+}
+.footer-logo-link-color {
+    color: #f4f4fd;
+}
+
+.footer-text {
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+
+
+}
+
+.footer-social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+
+}
+
+.soc-list-footer {
+    display: flex;
+    gap: 16px;
+}
+.soc-item-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link-footer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link-icons-footer {
+    fill: #f4f4fd;
+}
+
+.subscribe-container {
+    margin-left: 0 auto;
+}
+
+.subscribe-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-input {
+    width: 288px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    
+    margin-bottom: 16px;
+
+}
+
+.subscribe-input::placeholder {
+    color: #ffffff;
+    ;
+}
+
+.button-subscribe {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+    fill: #FFFFFF;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .subscribe-form {
+        display: flex;
+        gap:24px;
+    }
+    .container-footer {
+        justify-content: flex-start;
+        gap: 72px 24px;
+        padding-left: 108px;
+        
+    }
+    .subscribe-input {
+        width: 264px;
+    }
+    .footer-logo-link {
+        justify-content: start;
+    }
+
+    .footer-social-title {
+        text-align: left;
+    }
+    .subscribe-text {
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (min-width: 1158px) {
+    .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .container-footer {
+    padding-left: 15px;
+    gap: unset;
+
+
+    }
+        .footer-logo-container {
+        
+        }
+
+}
