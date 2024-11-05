@@ -895,7 +895,7 @@ img {
 
 .subscribe-input::placeholder {
     color: #ffffff;
-    ;
+    
 }
 
 .button-subscribe {
@@ -922,6 +922,15 @@ img {
     margin-left: 16px;
     fill: #FFFFFF;
 
+}
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #31d0aa;
+}
+
+.subscribe-input:focus,
+.subscribe-input:hover {
+    border-color: #4D5AE5;
 }
 
 
@@ -961,9 +970,8 @@ img {
     .container-footer {
     padding-left: 15px;
     gap: unset;
+}
 
-
-    }
         .footer-logo-container {
         
         }
